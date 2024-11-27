@@ -1,0 +1,40 @@
+.h{
+  height: 500px;
+}
+.v{
+  border-radius:20%;
+}
+.i{
+  width: 15px;
+}
+body{
+  #loader{
+    margin-left: 400px;
+    position: relative;
+    z-index: 1;
+    .img-5{
+      margin-left: 30%;
+      transform: scale(1.1);
+    }
+  }
+  .animate-bottom{
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+  }
+  @keyframes animatebottom {
+    from{ bottom: -100px; opacity: 0}
+    to{ bottom: 0;opacity: 1}
+  }
+  #img  {
+    display: none;
+    text-align: center;
+  }
+  .content{
+    text-align: left!important;
+    .navbar{
+      margin-top: 20px;
+      padding-right: 0;
+    }
+  }
+}
